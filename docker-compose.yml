@@ -1,0 +1,32 @@
+version: "3.9"
+services:
+  db:
+    image: mysql
+    restart: always
+    environment:
+      MYSQL_DATABASE: ferdb
+      MYSQL_ROOT_PASSWORD: password
+    ports:
+      - "3306:3306"
+  adminer:
+    image: adminer
+    restart: always
+    ports:
+      - 8080:8080
+    depends_on:
+      - db
+  web:
+    restart: always
+    environment:
+        MYSQL_HOST: db
+        MYSQL_PORT: 3306
+        MYSQL_USER: root
+        MYSQL_DATABASE: ferdb
+        MYSQL_PASSWORD: password
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8000:8000"
+    depends_on:
+      - db
