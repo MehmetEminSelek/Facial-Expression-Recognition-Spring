@@ -23,7 +23,9 @@ public class UserController {
         User newUser = new User();
         newUser.setAge(userRequest.getAge());
         newUser.setName(userRequest.getName());
-        newUser.setMail(userRequest.getMail());
+        newUser.setPhone(userRequest.getPhone());
+        newUser.setRef(userRequest.getRef());
+        newUser.setEdu(userRequest.getEdu());
         userRepository.save(newUser);
     }
 }

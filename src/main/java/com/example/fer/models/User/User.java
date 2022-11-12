@@ -20,9 +20,15 @@ public class User extends BaseEntity {
     private String name;
 
     @Column(nullable = false)
-    private String mail;
+    private int phone;
 
     @Column(nullable = false)
     private int age;
+
+    @Column(nullable = false)
+    private String ref;
+
+    @Column(nullable = false)
+    private String edu;
 
 }
