@@ -3,12 +3,10 @@ package com.example.fer.controller.User;
 import com.example.fer.models.User.DTO.UserDTO;
 import com.example.fer.models.User.User;
 import com.example.fer.repository.User.UserRepository;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
+@CrossOrigin
 @RequestMapping("/user")
 public class UserController {
 

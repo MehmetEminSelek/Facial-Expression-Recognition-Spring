@@ -3,13 +3,14 @@ package com.example.fer.controller.Store;
 import com.example.fer.models.Affectnet.Affectnet;
 import com.example.fer.models.Raf.Raf;
 import com.example.fer.models.SocketRequest.SocketRequest;
-import com.example.fer.repository.Affectnet.AffectnetRepository;
 import com.example.fer.repository.Raf.RafRepository;
+import  com.example.fer.repository.Affectnet.AffectnetRepository;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @RestController
@@ -26,7 +27,7 @@ public class StoreController {
 
     //Deneme
     @PostMapping("/save")
-    public void saveData(@RequestBody List<SocketRequest> socketRequest){
+    public void saveData(@RequestBody ArrayList<SocketRequest> socketRequest){
         List<Raf> rafList = convertToRaf(socketRequest);
         List<Affectnet> affectnetList = convertToAffectnet(socketRequest);
         rafRepository.saveAll(rafList);
