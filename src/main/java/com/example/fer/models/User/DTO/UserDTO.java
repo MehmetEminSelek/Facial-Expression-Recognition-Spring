@@ -15,4 +15,7 @@ public class UserDTO {
     private int age;
     private String ref;
     private String edu;
+    private String q1;
+    private String q2;
+    private String q3;
 }

@@ -31,4 +31,13 @@ public class User extends BaseEntity {
     @Column(nullable = false)
     private String edu;
 
+    @Column(nullable = false)
+    private String q1;
+
+    @Column(nullable = false)
+    private String q2;
+
+    @Column(nullable = false)
+    private String q3;
+
 }
