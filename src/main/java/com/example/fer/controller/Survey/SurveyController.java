@@ -18,15 +18,18 @@ public class SurveyController {
     @PostMapping("/save")
     public void saveSurvey(@RequestBody SurveyDTO surveyRequest){
         Survey survey = new Survey();
+
         survey.setDeterminato(surveyRequest.getDeterminato());
         survey.setAttivo(surveyRequest.getAttivo());
         survey.setInteressato(surveyRequest.getInteressato());
         survey.setAttento(surveyRequest.getAttento());
         survey.setEntusiasta(surveyRequest.getEntusiasta());
+        survey.setConcentrato(surveyRequest.getConcentrato());
         survey.setForte(surveyRequest.getForte());
         survey.setInspirato(surveyRequest.getInspirato());
         survey.setEccitato(surveyRequest.getEccitato());
         survey.setImpaurito(surveyRequest.getImpaurito());
+        survey.setTurbato(surveyRequest.getTurbato());
         survey.setNervoso(surveyRequest.getNervoso());
         survey.setAgitato(surveyRequest.getAgitato());
         survey.setSpaventato(surveyRequest.getSpaventato());
