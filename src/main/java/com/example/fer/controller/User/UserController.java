@@ -20,6 +20,7 @@ public class UserController {
     @PostMapping("/save")
     public void saveUser(@RequestBody UserDTO userRequest){
         User newUser = new User();
+
         newUser.setAge(userRequest.getAge());
         newUser.setName(userRequest.getName());
         newUser.setPhone(userRequest.getPhone());
@@ -28,6 +29,7 @@ public class UserController {
         newUser.setQ1(userRequest.getQ1());
         newUser.setQ2(userRequest.getQ2());
         newUser.setQ3(userRequest.getQ3());
+
         userRepository.save(newUser);
     }
 }

@@ -17,62 +17,68 @@ public class Survey extends BaseEntity {
     private int id;
 
     @Column(nullable = false)
-    private String Determinato;
+    private Integer code;
+
+
+    private String testNo;
 
     @Column(nullable = false)
-    private String Attivo;
+    private String determinato;
 
     @Column(nullable = false)
-    private String Interessato;
+    private String attivo;
 
     @Column(nullable = false)
-    private String Attento;
+    private String interessato;
 
     @Column(nullable = false)
-    private String Entusiasta;
+    private String attento;
 
     @Column(nullable = false)
-    private String Concentrato;
+    private String entusiasta;
 
     @Column(nullable = false)
-    private String Forte;
+    private String concentrato;
 
     @Column(nullable = false)
-    private String Inspirato;
+    private String forte;
 
     @Column(nullable = false)
-    private String Eccitato;
+    private String inspirato;
 
     @Column(nullable = false)
-    private String Impaurito;
+    private String eccitato;
 
     @Column(nullable = false)
-    private String Turbato;
+    private String impaurito;
 
     @Column(nullable = false)
-    private String Nervoso;
+    private String turbato;
 
     @Column(nullable = false)
-    private String Agitato;
+    private String nervoso;
 
     @Column(nullable = false)
-    private String Spaventato;
+    private String agitato;
 
     @Column(nullable = false)
-    private String Angosciato;
+    private String spaventato;
 
     @Column(nullable = false)
-    private String Colpevole;
+    private String angosciato;
 
     @Column(nullable = false)
-    private String Vergogna;
+    private String colpevole;
 
     @Column(nullable = false)
-    private String Irritabile;
+    private String vergogna;
 
     @Column(nullable = false)
-    private String Ostile;
+    private String irritabile;
 
     @Column(nullable = false)
-    private String Orgoglioso;
+    private String ostile;
+
+    @Column(nullable = false)
+    private String orgoglioso;
 }

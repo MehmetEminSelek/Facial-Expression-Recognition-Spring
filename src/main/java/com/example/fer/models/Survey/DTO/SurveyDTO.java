@@ -12,44 +12,49 @@ import javax.persistence.Column;
 @Builder
 @NoArgsConstructor
 public class SurveyDTO {
-    private String Determinato;
 
-    private String Attivo;
+    private Integer code;
 
-    private String Interessato;
+    private String testNo;
 
-    private String Attento;
+    private String determinato;
 
-    private String Entusiasta;
+    private String attivo;
 
-    private String Concentrato;
+    private String interessato;
 
-    private String Forte;
+    private String attento;
 
-    private String Inspirato;
+    private String entusiasta;
 
-    private String Eccitato;
+    private String concentrato;
 
-    private String Impaurito;
+    private String forte;
 
-    private String Turbato;
+    private String inspirato;
 
-    private String Nervoso;
+    private String eccitato;
 
-    private String Agitato;
+    private String impaurito;
 
-    private String Spaventato;
+    private String turbato;
 
-    private String Angosciato;
+    private String nervoso;
 
-    private String Colpevole;
+    private String agitato;
 
-    private String Vergogna;
+    private String spaventato;
 
-    private String Irritabile;
+    private String angosciato;
 
-    private String Ostile;
+    private String colpevole;
 
-    private String Orgoglioso;
+    private String vergogna;
+
+    private String irritabile;
+
+    private String ostile;
+
+    private String orgoglioso;
 
 }

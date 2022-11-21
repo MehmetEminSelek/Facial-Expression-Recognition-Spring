@@ -27,7 +27,7 @@ public class StoreController {
 
     //Deneme
     @PostMapping("/save")
-    public void saveData(@RequestBody ArrayList<SocketRequest> socketRequest){
+    public void saveData(@RequestBody List<SocketRequest> socketRequest){
         List<Raf> rafList = convertToRaf(socketRequest);
         List<Affectnet> affectnetList = convertToAffectnet(socketRequest);
         rafRepository.saveAll(rafList);

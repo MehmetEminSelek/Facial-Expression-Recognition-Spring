@@ -19,6 +19,8 @@ public class SurveyController {
     public void saveSurvey(@RequestBody SurveyDTO surveyRequest){
         Survey survey = new Survey();
 
+        survey.setCode(surveyRequest.getCode());
+        survey.setTestNo(surveyRequest.getTestNo());
         survey.setDeterminato(surveyRequest.getDeterminato());
         survey.setAttivo(surveyRequest.getAttivo());
         survey.setInteressato(surveyRequest.getInteressato());
@@ -39,8 +41,6 @@ public class SurveyController {
         survey.setIrritabile(surveyRequest.getIrritabile());
         survey.setOstile(surveyRequest.getOstile());
         survey.setOrgoglioso(surveyRequest.getOrgoglioso());
-
-
 
 
         surveyRepository.save(survey);
