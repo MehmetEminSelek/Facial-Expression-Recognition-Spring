@@ -49,6 +49,7 @@ public class StoreController {
             affectnet.setXcord(x.getXcord());
             affectnet.setYcord(x.getYcord());
             affectnet.setStatus(x.getStatus());
+            affectnet.setTimeStamp(x.getTimeStamp());
             return affectnet;
         }).toList();
     };
@@ -68,6 +69,7 @@ public class StoreController {
             raf.setXcord(x.getXcord());
             raf.setYcord(x.getYcord());
             raf.setStatus(x.getStatus());
+            raf.setTimeStamp(x.getTimeStamp());
             return raf;
         }).toList();
     };
