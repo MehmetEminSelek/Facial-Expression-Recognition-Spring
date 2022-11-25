@@ -5,7 +5,7 @@ services:
     restart: always
     environment:
       MYSQL_DATABASE: ferdb
-      MYSQL_ROOT_PASSWORD: @3k5C3ub
+      MYSQL_ROOT_PASSWORD: 3k5C3ubr
     ports:
       - "3306:3306"
   adminer:
@@ -22,7 +22,7 @@ services:
         MYSQL_PORT: 3306
         MYSQL_USER: ponciks
         MYSQL_DATABASE: ferdb
-        MYSQL_PASSWORD: @3k5C3ub
+        MYSQL_PASSWORD: 3k5C3ubr
     build:
       context: .
       dockerfile: Dockerfile
