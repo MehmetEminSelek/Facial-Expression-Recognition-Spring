@@ -21,14 +21,15 @@ public class UserController {
     public void saveUser(@RequestBody UserDTO userRequest){
         User newUser = new User();
 
-        newUser.setAge(userRequest.getAge());
+
         newUser.setName(userRequest.getName());
         newUser.setPhone(userRequest.getPhone());
+        newUser.setAge(userRequest.getAge());
         newUser.setRef(userRequest.getRef());
         newUser.setEdu(userRequest.getEdu());
-        newUser.setQ1(userRequest.getQ1());
-        newUser.setQ2(userRequest.getQ2());
-        newUser.setQ3(userRequest.getQ3());
+        newUser.setMemory(userRequest.getMemory());
+        newUser.setSnake(userRequest.getSnake());
+        newUser.setGender(userRequest.getGender());
 
         userRepository.save(newUser);
     }

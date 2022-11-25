@@ -26,18 +26,18 @@ public class User extends BaseEntity {
     private int age;
 
     @Column(nullable = false)
-    private String ref;
+    private int ref;
 
     @Column(nullable = false)
     private String edu;
 
     @Column(nullable = false)
-    private String q1;
+    private String snake;
 
     @Column(nullable = false)
-    private String q2;
+    private String memory;
 
     @Column(nullable = false)
-    private String q3;
+    private String gender;
 
 }
