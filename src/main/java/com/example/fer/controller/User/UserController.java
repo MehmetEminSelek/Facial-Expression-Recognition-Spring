@@ -6,7 +6,7 @@ import com.example.fer.repository.User.UserRepository;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@CrossOrigin
+@CrossOrigin(origins = {"http://wafer-experiment.com","http://waferresults.com","http://wafer-game.com"})
 @RequestMapping("/user")
 public class UserController {
 
