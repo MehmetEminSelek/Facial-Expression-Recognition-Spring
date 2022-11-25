@@ -20,7 +20,7 @@ services:
     environment:
         MYSQL_HOST: db
         MYSQL_PORT: 3306
-        MYSQL_USER: ponciks
+        MYSQL_USER: root
         MYSQL_DATABASE: ferdb
         MYSQL_PASSWORD: 3k5C3ubr
     build:
