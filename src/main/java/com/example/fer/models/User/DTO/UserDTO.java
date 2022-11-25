@@ -10,9 +10,13 @@ import lombok.NoArgsConstructor;
 @Builder
 @NoArgsConstructor
 public class UserDTO {
+
     private String name;
     private int phone;
     private int age;
     private String ref;
     private String edu;
+    private String q1;
+    private String q2;
+    private String q3;
 }

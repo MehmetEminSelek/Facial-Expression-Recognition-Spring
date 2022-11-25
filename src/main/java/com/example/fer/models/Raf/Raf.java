@@ -53,4 +53,7 @@ public class Raf extends BaseEntity {
     @Column(nullable = false)
     private String status;
 
+    @Column(nullable = false)
+    private String timeStamp;
+
 }

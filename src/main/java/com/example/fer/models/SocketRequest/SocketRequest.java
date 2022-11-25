@@ -18,5 +18,6 @@ public class SocketRequest {
     private double xcord;
     private double ycord;
     private String status;
+    private String timeStamp;
 }
 
