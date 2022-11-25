@@ -14,7 +14,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 @RestController
-@CrossOrigin(origins = {"http://wafer-experiment.com","http://waferresults.com","http://wafer-game.com"})
+@CrossOrigin(origins = {"https://wafer-experiment.com","https://waferresults.com","https://wafer-game.com"})
 public class StoreController {
 
     private final AffectnetRepository affectnetRepository;

@@ -6,7 +6,7 @@ import com.example.fer.repository.Survey.SurveyRepository;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@CrossOrigin(origins = {"http://wafer-experiment.com","http://waferresults.com","http://wafer-game.com"})
+@CrossOrigin(origins = {"https://wafer-experiment.com","https://waferresults.com","https://wafer-game.com"})
 @RequestMapping("/survey")
 public class SurveyController {
     private  final SurveyRepository surveyRepository;
