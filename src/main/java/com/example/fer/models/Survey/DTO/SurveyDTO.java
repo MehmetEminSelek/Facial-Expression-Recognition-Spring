@@ -31,7 +31,7 @@ public class SurveyDTO {
 
     private String forte;
 
-    private String inspirato;
+    private String ispirato;
 
     private String eccitato;
 

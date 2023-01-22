@@ -44,7 +44,7 @@ public class Survey extends BaseEntity {
     private String forte;
 
     @Column(nullable = false)
-    private String inspirato;
+    private String ispirato;
 
     @Column(nullable = false)
     private String eccitato;

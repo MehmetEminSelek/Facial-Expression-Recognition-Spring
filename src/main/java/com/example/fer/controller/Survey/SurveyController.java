@@ -28,7 +28,7 @@ public class SurveyController {
         survey.setEntusiasta(surveyRequest.getEntusiasta());
         survey.setConcentrato(surveyRequest.getConcentrato());
         survey.setForte(surveyRequest.getForte());
-        survey.setInspirato(surveyRequest.getInspirato());
+        survey.setIspirato(surveyRequest.getIspirato());
         survey.setEccitato(surveyRequest.getEccitato());
         survey.setImpaurito(surveyRequest.getImpaurito());
         survey.setTurbato(surveyRequest.getTurbato());
